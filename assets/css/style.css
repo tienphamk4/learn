@@ -29,12 +29,12 @@
     margin:0 10px;
     border-radius: 10px;
     transition: 0.7s;
-    color: rgba(255, 255, 255, 0.77) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    transition: 0.2s;
 }
 .header_body ul a:hover{
-    background: var(--color-primary);
+    font-size: 20px !important;
 }
-
 .header_login a{
     margin-right: 20px;
     padding:7px 10px;
@@ -43,7 +43,7 @@
     color: rgba(255, 255, 255, 0.73) !important;
 }
 .header_login a:hover{
-    background: var(--color-primary);
+    font-size: 20px !important;
 }
 .header_menu{
     display: none;
@@ -68,7 +68,7 @@
 .start .start_body{
     position: relative;
     z-index: 100;
-    max-width: 400px;
+    max-width: 500px;
     margin-left: 50px;
     transform: translateY(200px);
     color: white;
@@ -114,11 +114,11 @@
     height: 100%;
     overflow: hidden;
 }
-.explore .carousel-inner div:first-child img{
+/* .explore .carousel-inner div:first-child img{
     object-position: center;
-}
+} */
 .explore img{
-    object-position: right;
+    object-position: center;
 }
 .explore .body{
     width: 55%;
@@ -175,7 +175,6 @@
 
 /* learning */
 .learning{
-    margin-top: 90px;
     padding:70px;
     background: var(--color-gray-3);
 }
@@ -231,55 +230,50 @@
     transform: scale(1.2);
 }
 
-/* course */
-.course{
+/* product */
+.product{
     margin:90px 0;
 }
-.course .items{
+.product .items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.course .item{
+.product .item{
     background: var(--color-gray-3);
     width: 23%;
     /* aspect-ratio: 1; */
     border-radius: 15px;
     overflow: hidden;
     transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.course .item:hover{
+.product .item:hover{
     transform: translateY(-10px);
     border: 1px solid #dadada;
 }
-
-.course .item h3,h4{
+.product .item .item_image{
+    width: 100%;
+    height: 70%;
+}
+.product .item h3,h4{
     margin: 15px;
 }
-.course .item h4{
+.product .item h4{
     display: flex;
 }
-.course .item h5{
-    text-align: right;
-    margin-right: 15px;
-}
-
-.course .item .item_info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.course .item .trainer{
-    display: flex;
-    align-items: center;
-}
-.course .trainer_avatar{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 15px;
+.product button{
+    width: 50%;
+    background: var(--color-primary);
+    padding:10px 20px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-primary);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 /* trainer */
@@ -422,7 +416,7 @@
     background: transparent;
     color:#fff;
     border: none;
-    background: rgb(67,0,10,.85);
+    background: #Bf0A30;
     border-left: none;
     position:absolute;
     cursor: pointer;
@@ -439,6 +433,56 @@
     margin-top: 150px;
     margin-bottom: 50px;
     text-align: center;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: red;
+    margin: auto;
+    margin-top: 15px;
+}
+h2{
+    text-align: center !important;
+    color:#000 !important;
+}
+
+/* about */
+
+.about{
+    margin: 100px 0;
+    position: relative;
+    background: url(https://www.codecademy.com/resources/blog/wp-content/uploads/2022/12/What-Is-Pair-Programming--1.png) no-repeat center;
+}
+.about::after{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background: #Bf0A30;
+    opacity: 0.9;
+    
+}
+.about .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    position: relative;
+    z-index: 10;
+}
+.about .item{
+    width: 32%;
+    text-align: center;
+    color:#fff;
+}
+.about .item_title{
+    font-weight: 700; 
+    font-size: 20px;
 }
 /* responsiv.e */
 
@@ -481,7 +525,7 @@
         margin-bottom: 30px;
     }
 
-    .course .item{
+    .product .item{
         width: 48%;
         margin: 10px 0;
     }
@@ -503,7 +547,7 @@
     .header_login{
         display: none;
     }
-    .course .item{
+    .product .item{
         width: 100%;
     }
     .explore img{
@@ -513,6 +557,9 @@
     .explore .carousel-inner{
         height: auto;
         aspect-ratio: 1 !important;
+    }
+    .about .item{
+        width: 100%;
     }
 }
 

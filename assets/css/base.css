@@ -63,7 +63,8 @@ h2{
     outline: none;
     border: none;
     border-radius: 99px;
-    background: rgb(67,0,10,.85);
+    background: #Bf0A30;
+    opacity: .9;
     transition: 0.7s;
     cursor: pointer;
 }
@@ -82,5 +83,6 @@ h2{
     font-weight: 600;
 }
 .scrolled{
-    background: rgb(67,0,10,.85) !important
+    background: #Bf0A30 !important;
+    opacity: 0.9;
 }
