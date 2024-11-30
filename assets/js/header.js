@@ -9,3 +9,8 @@ document.addEventListener('scroll', function () {
 
     }
 })
+
+document.addEventListener('click', function () {
+    var dropdown = this.documentElement.querySelector('.dropdown')
+    dropdown.classList.toggle('hide');
+})
