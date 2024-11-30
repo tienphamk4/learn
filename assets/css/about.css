@@ -1,0 +1,151 @@
+
+/* goal */
+.goal{
+    padding:70px;
+    background: var(--color-gray-3);
+}
+.goal .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.goal h2{
+    color: #f2726a;
+    margin-top:0;
+    margin-bottom: 30px;
+}
+.goal .left{
+    width:47%;
+}
+.goal .right{
+    width: 50%;
+}
+.goal .left .item{
+    background: #fff;
+    padding: 30px 30px;
+    margin: 15px 0;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+}
+.goal .left .item:hover{
+    transform: scale(1.1);
+}
+.goal .item .item_logo{
+    width: 10%;
+
+}
+.goal .item .item_body{
+    width: 87%;
+}
+.goal .item p{
+    color: #898484;
+}
+
+.goal .right{
+    border-radius: 14px;
+    height: 500px;
+    overflow: hidden;
+}
+.goal img{
+    transition: 0.5s;
+}
+.goal img:hover{
+    transform: scale(1.2);
+}
+/* trainer */
+.trainers{
+    background: var(--color-gray-3);
+    padding: 70px;
+
+}
+.trainers h2{
+    color: #f2726a;
+    margin-bottom: 30px;
+}
+.trainers .items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.trainers .item{
+    width: 31.5%;
+    aspect-ratio: 1;
+    text-align: center;
+    background: #242628;
+    /* padding:20px; */
+    border-radius: 7px;
+    overflow: hidden;
+}
+.trainers .item_avatar{
+    width: 100px;
+    height: 100px;
+    margin: 25px auto;
+    border: 4px solid #f2726a;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.trainers .item_avatar:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    border: unset;
+    margin: 0 auto;
+}
+.trainers .item_name{
+    color:#fff;
+    font-size:20px;
+    font-weight: 500;
+}
+.trainers  .item_position{
+    color:#fff;
+    font-size:14px;
+    color:#f2726a;
+}
+.trainers ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin: 15px 0;
+}
+.trainers li{
+    color:#fff;
+    transition: 0.3s;
+}
+.trainers li:hover{
+    color:#f2726a;
+}
+.trainers .item_contact{
+    padding: 10px 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    background: transparent;
+    color:#fff;
+    border:1px solid #f2726a;
+    transition: 0.3s;
+}
+.trainers .item_contact:hover{
+    background: #f2726a;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 1000px){
+    .goal .right{
+        display: none !important;
+    }
+    .goal .left{
+        width: 100%;
+    }
+    .goal h2{
+        text-align: center;
+    }
+}
