@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <!-- Add CSS file -->
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/product.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header_logo">
+            <a href="homepage.html">
+                <img src="/assets/image/T1logo_square.webp" alt="">
+            </a>
+            <a href="" style="font-size: 24px;color:white">
+                T1
+            </a>
+        </div>
+        <div class="header_body">
+            <ul>
+                <li>
+                    <a href="homepage.html" class="">
+                        Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="">
+                        Giới thiệu
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        Sản phẩm
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">
+                        Tin tức
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Liên hệ
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header_login">
+            <a href="#">
+                Đăng kí
+            </a>
+            <button class="btn_normal text-white">
+                Đăng nhập
+            </button>
+        </div>
+        <div class="header_menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown hide">
+            <ul>
+                <li>
+                    <a href="homepage.html" class="">
+                        Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html" class="">
+                        Giới thiệu
+                    </a>
+                </li>
+                <li>
+                    <a href="product.html">
+                        Sản phẩm
+                    </a>
+                </li>
+                <li>
+                    <a href="news.html">
+                        Tin tức
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        Liên hệ
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="start">
+        <div class="fill"></div>
+        <div class="start_body">
+            <h1>
+                Tất cả sản phẩm ở đây
+            </h1>
+            <blockquote>
+                Thiết kế độc áo mang phong cách phù hợp với thời đại
+            </blockquote>
+            <button class="text-white">
+                Bắt đầu ngay
+            </button>
+        </div>
+    </div>
+    <!-- product -->
+    <div class="nav">
+        <div class="container">
+            <div class="tab_box">
+                <div class="tab_box-btns">
+                    <button onclick="filter('2024')">T1 2024 WORLD COLLECTION</button>
+                    <button onclick="filter('2023')">T1 2023 WORLD COLLECTION</button>
+                    <button onclick="filter('pk')">Phụ kiện</button>
+                    <button onclick="filter('dln')">Đồ lưu niệm</button>
+                </div>
+
+
+                <div class="filter_search">
+                    <input type="text" placeholder="Tìm kiếm" class="form-control">
+                </div>
+            </div>
+            <div class="content_box">
+                <div class="item" data-category="2024">
+                    <div class="item_image">
+                        <img src="/assets/image/pro-1.webp" alt="">
+                    </div>
+                    <h3>2024 T1 Worlds Uniform Jacket</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            999.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="2024">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-2.jpg" alt="">
+                    </div>
+                    <h3>2024 T1 Worlds Uniform Jersey</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            699.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="2024">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-3.jpg" alt="">
+                    </div>
+                    <h3>2024 T1 World Champions Plushie Uniform Set</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            999.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="2024">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-4.png" alt="">
+                    </div>
+                    <h3>2024 T1 World Champions ZOFGK Keycap</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            999.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="2024">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-5.png" alt="">
+                    </div>
+                    <h3>2024 T1 World Champions Ball Cap</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            999.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="2023">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-6.png" alt="">
+                    </div>
+                    <h3>T1 Logo Badge - V5 Champions Edition</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            999.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="2023">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-7.jpg" alt="">
+                    </div>
+                    <h3>2023 World Champions T1 Desk Mat Ver.2</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            1.000.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            299.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="2023">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-8.jpg" alt="">
+                    </div>
+                    <h3>
+                        2023 World Champions T1 Desk Mat Ver.1
+                    </h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            999.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="pk">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-9.jpg" alt="">
+                    </div>
+                    <h3>
+                        2024 T1 MSI T-Shirt Chengdu Edition - Navy</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            999.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="pk">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-10.jpg" alt="">
+                    </div>
+                    <h3>
+                        2024 T1 MSI T-Shirt Chengdu Edition - White</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            3.960.194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            999.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="dln">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-11.jpg" alt="">
+                    </div>
+                    <h3>T1 Player Mini Figure</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            299.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            50.000đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="dln">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-12.jpg" alt="">
+                    </div>
+                    <h3>T1 20th Anniv. Faker Keychain</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            396.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            199.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="dln">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-13.jpg" alt="">
+                    </div>
+                    <h3>
+                        T1 20th Anniv. BoxeR Keychain</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            192.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            99.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+                <div class="item" data-category="dln">
+                    <div class="item_image">
+                        <img src="/assets/image/fil-14.jpg" alt="">
+                    </div>
+                    <h3>
+                        T1 20th Anniversary Beer Glass</h3>
+                    <h4>
+                        <div class="original" style="margin-right: 15px;text-decoration: line-through;">
+                            194.000đ
+                        </div>
+                        <div class="discount" style="color:var(--color-orange-2)">
+                            88.999đ
+                        </div>
+
+                    </h4>
+                    <a class="text-white btn_primary" href="contact.html">
+                        Mua ngay
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper_img">
+                    <img src="/assets/image/logo.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="contact.html">Thông tin liên hệ</a></li>
+                    <li>Công ty cổ phần T1 Việt Nam</li>
+                    <li>Địa chỉ: Thanh Trì Hà Nội</li>
+                    <li>Số điện thoại: (028) 1234 5678</li>
+                    <li>Email: t1@gg.vn</li>
+                </ul>
+                <ul class="wrapper_link">
+                    <li><a href="homepage.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href=""> Sản phẩm</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Bảo hành</a></li>
+                </ul>
+
+                <div class="frame">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.58836696087!2d105.8262382747139!3d21.009131388453547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac800f450807%3A0x419a49bcd94b693a!2zSOG7jWMgVmnhu4duIE5nw6JuIEjDoG5n!5e0!3m2!1svi!2s!4v1732543122590!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="copyright">
+                    © 2024 ông ty cổ phần T1 Việt Nam. All rights reserved.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- my js -->
+    <script src="/assets/js/header.js"></script>
+    <script src="/assets/js/product.js"></script>
+</body>
+
+</html>

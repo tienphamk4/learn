@@ -1,0 +1,17 @@
+.form{
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 700px;
+    margin: 80px auto;
+}
+.form .form-control{
+    font-size: 15px;
+    line-height: 3.5;
+}
+.form span{
+    font-size: 13px;
+    color:red
+}
+.invalid{
+    border:1px solid red
+}

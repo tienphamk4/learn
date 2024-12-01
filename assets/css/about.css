@@ -1,4 +1,15 @@
-
+/* intro */
+.intro{
+    margin-bottom: 40px;
+    padding: 0 70px;
+}
+.intro p{
+    font-size:16px;
+}
+.intro .container{
+    border-bottom: 1px solid #eeddde;
+    padding:40px 0;
+}
 /* goal */
 .goal{
     padding:70px;
@@ -55,10 +66,12 @@
 .goal img:hover{
     transform: scale(1.2);
 }
+
+
 /* trainer */
 .trainers{
-    background: var(--color-gray-3);
     padding: 70px;
+    padding-top: 0;
 
 }
 .trainers h2{
@@ -71,8 +84,8 @@
     flex-wrap: wrap;
 }
 .trainers .item{
-    width: 31.5%;
-    aspect-ratio: 1;
+    width: 19%;
+    aspect-ratio: 3/4;
     text-align: center;
     background: #242628;
     /* padding:20px; */
@@ -138,6 +151,17 @@
 
 
 /* responsive */
+@media screen and (max-width: 1250px){
+    .trainers .items{
+        justify-content: unset;
+        gap:10px
+    }
+    .trainers .item{
+        width: 32%;
+        aspect-ratio: 1;
+        
+    }
+}
 @media screen and (max-width: 1000px){
     .goal .right{
         display: none !important;
@@ -147,5 +171,19 @@
     }
     .goal h2{
         text-align: center;
+    }
+
+    .trainers .item{
+        width: 48%;
+        aspect-ratio: 4/3;
+        
+    }
+}
+
+@media screen and (max-width: 768px){
+    .trainers .item{
+        width: 100%;
+        aspect-ratio: 4/3;
+        
     }
 }
