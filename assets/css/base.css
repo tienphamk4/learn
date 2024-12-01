@@ -237,7 +237,7 @@ h2{
 
 /* start */
 .start {
-    background: url(/assets/image/background.jpg);
+    background: url(assets/image/background.jpg);
     background-position: center bottom;
     width: 100%;
     height: 500px;
