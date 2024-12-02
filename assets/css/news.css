@@ -1,7 +1,10 @@
 h3{
     font-size: 1.6rem;
 }
-.wrapper{
+.main{
+    margin: 100px 0;
+}
+.main .wrapper{
     display: flex;
     flex-wrap: wrap;
     height: 660px;

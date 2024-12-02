@@ -219,13 +219,6 @@ h2{
         width:100% !important;
         margin: 0 auto;
     }
-    .header_body{
-        display: none;
-    }
-    .header_menu{
-        display:block !important;
-        font-size: 20px;
-    }
 }
 @media screen and (max-width: 1000px){
     .start{
@@ -262,6 +255,10 @@ h2{
 }
 
 @media screen and (max-width:700px){
+
+    .explore a{
+        width: unset;
+    }
     .trainers .item{
         width: 100%;
         aspect-ratio: 4/3;
@@ -275,12 +272,8 @@ h2{
         transform: translateY(-200px);
         opacity: 1;
     }
-
 }
 @media screen and (max-width:550px){
-    .header_login{
-        display: none;
-    }
     .product .item{
         width: 100%;
     }

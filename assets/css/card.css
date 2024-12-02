@@ -1,0 +1,74 @@
+.main{
+    margin: 150px 0;
+}
+
+.main .wrapper{
+    background: #fff;
+    border-radius: 10px;
+    padding:20px 30px;
+}
+
+.main .top{
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 0 auto;
+    color: var(--color-primary)
+}
+
+.main .item{
+    max-width: 1000px;
+    margin: 30px auto;
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.main .item_img{
+    width: 15%;
+    aspect-ratio: 1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.main .item_info{
+    width: 15%;
+}
+.main .item_info a{
+    display: block;
+}
+.main .item_quantity{
+    width: 15%;
+}
+.main .item_quantity input{
+    width: 50px;
+    margin:0 10px;
+    text-align: center;
+}
+.main .coupon{
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main .coupon input{
+    width:75%;
+    padding:10px 20px;
+   
+}
+.main .coupon button{
+    width: 20%;
+    margin-top: 0;
+}
+
+.main .checkout{
+    max-width: 1000px;
+    width: 100%;
+    margin:30px auto;
+    display: block;
+    background: var(--color-primary);
+    color:#fff
+}

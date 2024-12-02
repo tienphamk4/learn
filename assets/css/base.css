@@ -4,7 +4,6 @@
     --color-gray: #e8ebed;
     --color-gray-2: #898484;
     --color-gray-3: #f7f9fa;
-    --color-bg: linear-gradient(to right bottom, #f26359, #e64e1b);
     --color-primary: #f2726a;
     --color-text: rgba(255, 255, 255, 0.73);
 }
@@ -225,16 +224,11 @@ h2{
         display: none;
     }
     .header_menu{
-        display:block !important;
+        display:inline !important;
         font-size: 20px;
     }
 }
 
-@media screen and (max-width:550px){
-    .header_login{
-        display: none;
-    }
-}
 
 /* start */
 .start {
