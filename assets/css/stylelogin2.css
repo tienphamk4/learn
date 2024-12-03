@@ -98,3 +98,11 @@ body {
 .switch-form a:hover {
     text-decoration: underline;
 }
+
+form span{
+    font-size: 13px;
+    color:red
+}
+.invalid{
+    border:1px solid red !important
+}

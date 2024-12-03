@@ -192,6 +192,18 @@
 
     <!-- my js -->
     <script src="assets/js/header.js"></script>
+    <script>
+
+
+        elements = document.querySelectorAll('img')
+        Array.from(elements).forEach(element => {
+            element.style.cursor = 'pointer'
+            element.addEventListener('click', function () {
+                window.location.href = 'news_detail.html'
+            })
+        });
+
+    </script>
 </body>
 
 </html>

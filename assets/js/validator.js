@@ -13,15 +13,24 @@ function validator(option) {
                 isValid = false;
             }
         })
-        if (isValid) {
-            alert('Gửi thành công')
+
+        // thuc hien redirect
+        if (isValid && option.form_id === '#login-section') {
+            alert('Đăng nhập thành công')
+            window.location.href = 'index.html'
+        } else if (isValid && option.form_id === '#register-section') {
+            alert('Đăng kí thành công')
+            window.location.href = 'login.html'
         }
     }
 
     option.rules.forEach(rule => {
         var input = form.querySelector(rule.validId);
+        console.log(rule.validId)
         input.onblur = function () {
+
             validate(rule)
+
         }
         input.oninput = function () {
             var message = input.parentElement.querySelector('.form-message')
@@ -64,6 +73,16 @@ validator.isEmail = function (emailId) {
         check: function (value) {
             var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
             return regex.test(value) ? undefined : 'Vui lòng nhập đúng địa chỉ email'
+        }
+    }
+}
+
+validator.checkPasswordConfirm = function (confirmPasswordId) {
+    return {
+        validId: confirmPasswordId,
+        check: function (value) {
+            var password = document.querySelector('#password')
+            return value === password.value ? undefined : 'Mật khẩu nhập lại không khớp'
         }
     }
 }
